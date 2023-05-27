@@ -1,0 +1,204 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/cosmetics.png" class="logo">
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#brands">brands</a>
+            <a href="#categories">categories</a>
+
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/lipstick.jpg" alt="">
+                <div class="content">
+                    <h3>Lipstick</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/download.jpg" alt="">
+                <div class="content">
+                    <h3>Nailpaint</h3>
+                    <span class="price">$3.55/-</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/hairband.jpg" alt="">
+                <div class="content">
+                    <h3>Hairband</h3>
+                    <span class="price">$2.99/-</span>
+                    <span class="quantity">qty: 1</span>
+                </div>
+            </div>
+            <div class="total">total: $11.53/-</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <p>Forgotten your password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create Now</a></p>
+            <input type="submit" value="Login now" class="btn">
+        </form>
+    </header>
+
+    <section class="features" id="features">
+        <h1 class="heading"> top <span>features</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/conditioner.jpg" alt="">
+                <h3>Conditioner</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn"> Price: Rs500</a>
+            </div>
+            <div class="box">
+                <img src="images/shampoo.jpg" alt="">
+                <h3>Shampoo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn"> Price: Rs1500</a>
+            </div>
+            <div class="box">
+                <img src="images/cream.jpg" alt="">
+                <h3>Cream</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn"> Price: Rs900</a>
+            </div>
+        </div>
+    </section>
+    <!-- for brands -->
+    <section class="brands" id="brands">
+        <h1 class="heading"> Top <span>Brands</span></h1>
+
+        <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swipper-slide box">
+                    <img src="images/mqd.png" alt="">
+                    <h3>MQD</h3>
+                    <div class="price">Rs 500+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+                <div class="swipper-slide box">
+                    <img src="images/belle.png" alt="">
+                    <h3>Belle</h3>
+                    <div class="price">Rs 1000+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+                <div class="swipper-slide box">
+                    <img src="images/dkny.png" alt="">
+                    <h3>DKNY</h3>
+                    <div class="price">Rs 500+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- for categories -->
+    <section class="categories" id="categories">
+        <h1 class="heading"> All <span>Categories</span></h1>
+
+        <div class="swiper category-slider">
+            <div class="swiper-wrapper">
+                <div class="swipper-slide box">
+                    <img src="images/faceproducts.jpg" alt="">
+                    <h3>faceproducts</h3>
+                    <div class="price">Rs 500+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+                <div class="swipper-slide box">
+                    <img src="images/makeup.jpg" alt="">
+                    <h3>Makeup</h3>
+                    <div class="price">Rs 1000+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+                <div class="swipper-slide box">
+                    <img src="images/hairproducts.jpg" alt="">
+                    <h3>hairproducts</h3>
+                    <div class="price">Rs 500+</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Select</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
